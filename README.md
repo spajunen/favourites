@@ -34,7 +34,7 @@ This application can be used as a memo for user's favourite coffees and teas.
 - Add delete and modify functions
 - Improve error handling
 - Solve problem with react-hook-form & MUI/Select
-- Improve ui, check accessibility
+- Improve desing, check accessibility
 
 ## Getting started
 
