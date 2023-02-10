@@ -1,15 +1,13 @@
 import React from "react";
-import Box from '@mui/material/Box';
-import {Tab} from '@mui/material';
-import TabList from "@mui/lab/TabList";
-import {TabContext, TabPanel} from '@mui/lab';
-import AddFavouriteForm from './AddFavouriteForm';
-import {useMutation, useQueryClient} from 'react-query';
-import {Favourite} from '../data/model';
-import {createFavourite} from '../data/favourite';
+import {Tab, Box} from "@mui/material";
+import {TabContext, TabPanel, TabList} from "@mui/lab";
+import AddFavouriteForm from "./AddFavouriteForm";
+import {useMutation, useQueryClient} from "react-query";
+import {Favourite} from "../data/model";
+import {createFavourite} from "../data/favourite";
 
 const AddFavourite: React.FC<{}> = () => {
-    const [value, setValue] = React.useState('1');
+    const [value, setValue] = React.useState("1");
     const queryClient = useQueryClient();
 
     const handleChange = (event: React.SyntheticEvent, newValue: string) => {
@@ -24,7 +22,7 @@ const AddFavourite: React.FC<{}> = () => {
         },
         {
             onSuccess: () => queryClient.invalidateQueries(["favourites"]),
-            onError: () => console.log ('error'),
+            onError: (error) => console.log(error),
         }
     );
 
