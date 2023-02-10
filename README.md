@@ -16,25 +16,25 @@ This application can be used as a memo for user's favourite coffees and teas.
   - name
   - weight in g
   - price
-  - roast 1-5 (multichoice)
+  - roast 1-5 (multi-choice)
 
 - List saved beverages on same or separate pages
-- Save data drom Fronend with e.g React or TypeScript
+- Save data from Fronend with e.g React or TypeScript
 - Implement backend (e.g Java, Kotlin, Golang)
 - text file can be used as a database, also real database is possible but application should be able to run independently
 - tests
 
-- Plan the work so that it takes you max 6 hours. Save app e.g to GitHub and write iinstructions to run on Readme.md.
+- Plan the work so that it takes you max 6 hours. Save app e.g to GitHub and write instructions to run on Readme.md.
 
 ### Further developement
 
 - Add database
-- Add user accouts & autentication
+- Add user accounts & authentication
 - Add search & pagination for table
 - Add delete and modify functions
 - Improve error handling
 - Solve problem with react-hook-form & MUI/Select
-- Improve desing, check accessibility
+- Improve design, check accessibility
 
 ## Getting started
 
@@ -69,6 +69,7 @@ Services are now running:
 - Material UI
 - React Hook Form
 - React Query
+- React router
 - Jest
 
 ### Other
