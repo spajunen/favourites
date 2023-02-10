@@ -22,9 +22,7 @@ export async function getFavourites(): Promise<Favourite[]> {
 export async function createFavourite(
     favourite: Favourite
 ): Promise<void> {
-    console.log("menee lähetykseen", favourite);
     await Axios.post<void>(`${basePath}`, {
         favourite
     });
 }
-
