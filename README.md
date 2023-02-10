@@ -21,8 +21,8 @@ This application can be used as a memo for user's favourite coffees and teas.
 - List saved beverages on same or separate pages
 - Save data from Fronend with e.g React or TypeScript
 - Implement backend (e.g Java, Kotlin, Golang)
-- text file can be used as a database, also real database is possible but application should be able to run independently
-- tests
+- Text file can be used as a database, also real database is possible but application should be able to run independently
+- Tests
 
 - Plan the work so that it takes you max 6 hours. Save app e.g to GitHub and write instructions to run on Readme.md.
 
@@ -30,15 +30,18 @@ This application can be used as a memo for user's favourite coffees and teas.
 
 - Add database
 - Add user accounts & authentication
-- Add search & pagination for table
-- Add delete and modify functions
+- Add search, sort & pagination for table
+- Add delete and put functions
 - Improve error handling
 - Solve problem with react-hook-form & MUI/Select
+- Add success message when form is send
 - Improve design, check accessibility
+- Add Next.js to Frontend
+- Add language choices and labels to easily maintainable file
 
 ## Getting started
 
-These instructions will get you a copy of the project up and running on your local machine for development purposes.
+These instructions will get you a copy of the project up and running on your local machine for development and demo purposes.
 
 ### Installing
 
