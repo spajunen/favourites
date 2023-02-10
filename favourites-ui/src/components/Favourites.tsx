@@ -1,6 +1,6 @@
 import React from "react";
-import FavouritesTable from './FavouritesTable';
-import {useFavourites} from '../data/favourite';
+import FavouritesTable from "./FavouritesTable";
+import {useFavourites} from "../data/favourite";
 
 interface Props {
     beverage: string;
@@ -9,7 +9,7 @@ interface Props {
 const Favourites: React.FC<Props> = ({beverage}) => {
     const { data: favourites, error } = useFavourites();
 
-    if (error) return <div>Lataus ei onnistunut</div>;
+    if (error || !favourites) return <div>Lataus ei onnistunut</div>;
 
     return (
         <div>
