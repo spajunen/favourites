@@ -1,6 +1,6 @@
 import React from "react";
-import {Favourite} from '../data/model';
-import {Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow} from '@mui/material';
+import {Favourite} from "../data/model";
+import {Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow} from "@mui/material";
 
 interface Props {
     beverage: string;
@@ -19,10 +19,9 @@ const FavouritesTable: React.FC<Props> = ({beverage, favourites}) =>  {
         }
     }
 
-
     return (
         <div>
-            <TableContainer component={Paper} sx={{ margin: 3 }}>
+            <TableContainer component={Paper} className="table">
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>
                         <TableRow>
@@ -49,7 +48,6 @@ const FavouritesTable: React.FC<Props> = ({beverage, favourites}) =>  {
                     </TableBody>
                 </Table>
             </TableContainer>
-
         </div>
     );
 };
